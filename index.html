@@ -108,7 +108,7 @@
             line-height: 1.2;
             margin-bottom: 1rem;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -128,7 +128,7 @@
             cursor: pointer;
             transition: transform 0.3s ease;
             background: linear-gradient(164.33deg, var(--primary) 17.62%, var(--secondary) 61.11%, var(--accent) 86.45%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -151,7 +151,7 @@
             margin-bottom: 1.5rem;
             text-align: center;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -199,7 +199,7 @@
             padding: 2px;
             border-radius: inherit;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none;
@@ -216,7 +216,7 @@
             height: 50px;
             margin-bottom: 20px;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -226,7 +226,7 @@
             margin-bottom: 15px;
             font-weight: 700;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -277,7 +277,7 @@
             padding: 2px;
             border-radius: inherit;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none;
@@ -293,14 +293,13 @@
         .timeline-item::after {
             content: '';
             position: absolute;
-            left: -25px; /* Adjusted position to be further left */
+            left: -3%; /* Adjusted to be responsive */
             top: 50%;
             transform: translateY(-50%);
             width: 10px;
             height: 10px;
             background-color: var(--timeline-dot);
             border-radius: 50%;
-            /* Added glowing box-shadow */
             box-shadow: 0 0 10px 5px var(--timeline-dot);
         }
 
@@ -349,7 +348,7 @@
             padding: 2px;
             border-radius: inherit;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none;
@@ -366,7 +365,7 @@
             font-size: 1.5rem;
             margin-bottom: 15px;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-           background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -413,7 +412,7 @@
             padding: 2px;
             border-radius: inherit;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none;
@@ -454,7 +453,7 @@
             box-shadow: none; 
             border: 2px solid var(--primary);
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 2rem;
         }
@@ -469,7 +468,7 @@
             font-size: 2rem;
             color: var(--light);
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 2rem;
             line-height: 1;
@@ -483,7 +482,7 @@
             justify-content: center;
             gap: 12px;
             background: linear-gradient(97.78deg, var(--light) 37.19%, var(--accent) 57.52%, var(--primary) 77.85%);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -538,6 +537,13 @@
             .timeline-time {
                 margin-top: 10px;
             }
+
+            /* Added new styles for the events-grid on mobile */
+            .events-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
@@ -585,7 +591,7 @@
                 <div class="card">
                     <i data-lucide="map-pin" class="card-icon"></i>
                     <h3 class="card-title">Venue</h3>
-                    <p class="card-content">MPH<br>Tower-1, Floor-10</p>
+                    <p class="card-content">MPH <br> Tower-1,Floor-10</p>
                 </div>
             </div>
 
@@ -705,18 +711,18 @@
             </div>
             <div class="event-card">
                 <h3 class="event-title">Who Am I?</h3>
-                <p class="event-desc"> Players guess the name on their forehead/back using yes or no questions</p>
+                <p class="event-desc">Players guess the name on their forehead/back using yes or no questions</p>
             </div>
         </div>
 
         <div class="events-grid">
             <div class="event-card">
                 <h3 class="event-title">Rapid Fire Round</h3>
-                <p class="event-desc"> Engage participants in fast paced question rounds for quick thinking and fun</p>
+                <p class="event-desc">Engage participants in fast paced question rounds for quick thinking and fun</p>
             </div>
             <div class="event-card">
                 <h3 class="event-title">Drama & Cultural Segment</h3>
-                <p class="event-desc">A brief, engaging drama & cultural segment to entertain the audience</p>
+                <p class="event-desc"> A brief, engaging drama & cultural segment to entertain the audience</p>
             </div>
         </div>
     </section>
@@ -877,7 +883,3 @@
     </script>
 </body>
 </html>
-
-
-
-
