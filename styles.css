@@ -377,7 +377,9 @@ section {
 
 /* Time */
 .timeline-time {
-  background: linear-gradient(135deg, #6889FF, #7000FF);
+/*   background: linear-gradient(135deg, #6889FF, #7000FF); */
+    background: linear-gradient(135deg, #320a8f, #394fd1, #3faed6);
+
   color: #fff;
   font-size: 0.8rem;
   font-weight: 500;
@@ -785,4 +787,5 @@ footer {
     }
 
 }
+
 
