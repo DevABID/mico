@@ -227,6 +227,8 @@ section {
 .info-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items :center;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
@@ -787,5 +789,6 @@ footer {
     }
 
 }
+
 
 
