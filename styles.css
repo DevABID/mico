@@ -442,7 +442,7 @@ section {
     line-height: 22px;
     font-weight: 400;
     padding-bottom: 40px;
-    background: var(--gradient);
+    background: var(--gradient2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -785,3 +785,4 @@ footer {
     }
 
 }
+
