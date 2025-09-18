@@ -10,7 +10,7 @@
     --nav-bg: rgba(208, 218, 255, 0.8);
     --timeline-bg: linear-gradient(-8deg, rgba(3, 0, 20, 0.05), rgba(4, 105, 255, 0.05), rgba(112, 0, 255, 0.05));
     --gradient: linear-gradient(135deg, #3a0ca3, #4361ee, #4cc9f0);
-        --gradient2:linear-gradient(135deg, #8f6dff, #a7baff, #c4f7ff);
+        --gradients:linear-gradient(135deg, #8f6dff, #a7baff, #c4f7ff);
 
 
     --date-gradient: linear-gradient(135deg, #3a0ca3, #4361ee, #4cc9f0);
@@ -446,7 +446,7 @@ section {
     line-height: 22px;
     font-weight: 400;
     padding-bottom: 40px;
-    background: var(--gradient2);
+    background: var(--gradients);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -789,6 +789,7 @@ footer {
     }
 
 }
+
 
 
 
