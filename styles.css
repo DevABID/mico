@@ -11,6 +11,9 @@
     --timeline-bg: linear-gradient(-8deg, rgba(3, 0, 20, 0.05), rgba(4, 105, 255, 0.05), rgba(112, 0, 255, 0.05));
     --gradient: linear-gradient(135deg, #3a0ca3, #4361ee, #4cc9f0);
         --gradients:linear-gradient(135deg, #8f6dff, #a7baff, #c4f7ff);
+            --gradientab: linear-gradient(135deg, #7c5bff, #82a0ff, #99f0ff);
+
+
 
 
     --date-gradient: linear-gradient(135deg, #3a0ca3, #4361ee, #4cc9f0);
@@ -497,7 +500,7 @@ section {
 }
 
 .about-text2 {
-    background: var(--gradient);
+    background: var(--gradientab);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -789,6 +792,7 @@ footer {
     }
 
 }
+
 
 
 
